@@ -140,6 +140,3 @@ The React frontend is deployed separately via [Vercel](https://vercel.com).
 See [`tictactoe`](https://github.com/FriedricNietzsche/tictactoe)
 
 
-```
-
-```
