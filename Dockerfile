@@ -1,6 +1,5 @@
 # Use an OpenJDK base image with Java 17
-FROM eclipse-temurin:17-jdk
-
+FROM eclipse-temurin:21-jdk
 # Set working directory
 WORKDIR /app
 
@@ -9,6 +8,5 @@ COPY . .
 
 # Build the application and rename the JAR for consistency
 RUN ./mvnw clean package && cp target/*.jar app.jar
-
 # Run the application
 CMD ["java", "-jar", "app.jar"]
