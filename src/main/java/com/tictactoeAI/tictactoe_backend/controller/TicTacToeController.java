@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/game")
 public class TicTacToeController {
